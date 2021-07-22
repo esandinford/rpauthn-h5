@@ -1,0 +1,42 @@
+#MainContainer{
+    width: 100%;
+    height: 400px;
+}
+body{
+    text-align: center;
+    width: 98%;
+    height: 98%;
+    position: absolute;
+    font-size : 24px;
+}
+input{
+    font-size: inherit;
+}
+
+.middleFlex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items : center;
+    align-content: center;
+    justify-content: center;
+}
+.widthLabel{
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+}
+.formELeContainer{
+    height: 100%;
+    margin: 5px;
+}
+#zimForm{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
