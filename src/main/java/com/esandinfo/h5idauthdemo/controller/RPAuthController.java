@@ -16,7 +16,7 @@ import java.util.Map;
 
 @Controller
 public class RPAuthController {
-    String APPCODE="ccc03a6cce634c3daf56a2d778e74765";
+    String APPCODE="替换为你的appCode";
     @PostMapping("/getVerifyUrl")
     @ResponseBody
     public String getVerifyUrl(@RequestBody String req){
