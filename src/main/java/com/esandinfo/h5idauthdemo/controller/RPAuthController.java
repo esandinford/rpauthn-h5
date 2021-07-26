@@ -6,11 +6,9 @@ import com.alibaba.fastjson.JSON;
 import com.esandinfo.h5idauthdemo.entity.RPRequest;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
+import javax.websocket.server.PathParam;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -37,5 +35,17 @@ public class RPAuthController {
         return  httpResponse.body();
     }
 
+    @PostMapping("/notifyUrl")
+    @ResponseBody
+    public String notifyDull(@RequestBody String req){
+        System.out.println("notify请求参数:"+req);
+        return "";
+    }
 
+    @GetMapping("/returnUrl")
+    @ResponseBody
+    public String returnDull(@RequestParam("response") String req){
+        System.out.println("returnurl响应:"+req);
+        return "index";
+    }
 }

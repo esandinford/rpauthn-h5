@@ -64,7 +64,7 @@ function onPostClick(){
             certName:certName,
             certNo:certNo,
             livingType:"4",
-            returnUrl:"http://www.baidu.com"
+            returnUrl:"http://127.0.0.1:18080/returnUrl"
         }
     }).then(response=>{
         const resData=response.data;
